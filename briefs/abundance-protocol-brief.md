@@ -19,7 +19,7 @@ The old system, based on competition for a finite pie, is causing planetary and 
 
 The Abundance Protocol is the technological and economic infrastructure to make this force the **engine of our global economy**.
 
-### The Physics of an Infinite Game
+### The Infinite Game
 
 - **Finite Game:** Known players, fixed rules, goal is to win (beating others). This describes our current economic model.  
 - **Infinite Game:** The goal is to keep playing, to perpetuate the game by elevating all participants. This is the model for the Abundance Protocol.
@@ -39,155 +39,217 @@ The core coordination mechanism is **Stigmergy**: the trace left by one action s
 
 ---
 
-## The Technical Architecture
+## Technical Architecture (High Level)
 
-The protocol is built on a stack of decentralized technologies, creating a "trustless" environment where cooperation is guaranteed by **code**, not intermediaries.
+The Abundance Protocol is implemented as **OHM Protocol**, built as a stack of decentralized components:
 
-### 1. The Foundation: On-Chain Trust & Identity
+1. **Public blockchain & smart contracts** – trust, rules, and value movement.  
+2. **Identity & profiles** – on-chain representation of contributors (Digital Legacy Ledgers).  
+3. **Global Good Credits & project contracts** – measurement of regenerative action.  
+4. **Treasury & economic engine** – UBI, regenerative investments, VPO & bonds.  
+5. **Verification layer** – multi‑source proof of real‑world impact.  
+6. **Intelligence & UX** – the Global Good AI Agent and frontends.
+
+### On-Chain Trust & Identity
 
 - **Public Blockchain**  
-  The immutable, single source of truth. Rules are encoded in open‑source smart contracts—a "digital constitution" visible to all and unchangeable by any single entity.
+  Immutable, shared source of truth. Rules are encoded in open‑source smart contracts—a "digital constitution" visible to all and unchangeable by any single entity.
 
-- **User Profile Contract**  
-  A dynamic, on‑chain identity. It is not a static ID, but a **Digital Legacy Ledger**—a verifiable record of a user’s contributions (their "contribution capital"), separate from their financial capital (wallet).
+- **User Profile Contract (Digital Legacy Ledger)**  
+  A dynamic, on‑chain identity bound to one or more wallets. It records:
+  - Verified contributions (contribution capital).  
+  - Roles, badges, and reputation signals.  
+  - Links to richer off-chain profile data.
 
-- **Global Good Credits**  
-  Immutable, quantifiable measures of positive impact. This "Proof‑of‑Goodwill" is earned through action and is the key to governance rights and UBI eligibility.
+- **Global Good Credits (GGCs)**  
+  Non‑transferable impact credits earned through verified acts of good across three pillars:
+  - Environment  
+  - Animal welfare  
+  - Humanity  
 
-### 2. Core Smart Contracts
+  GGCs represent **Proof-of-Goodwill** and are key inputs to:
+  - Governance weight.  
+  - UBI eligibility and tuning.  
+  - AI matching and discovery.
 
-- **Project Contract**  
-  The immutable storybook for every regenerative initiative. It holds the project’s mission, plan, and resources. Upon successful, verified completion, it permanently records the achievement, releasing the "digital pheromones" that trigger value flow and system learning.
+### Project Contracts
 
-- **DAO Treasury**  
-  The community‑owned vault and economic engine. It is not a bank account but a smart contract that holds the collective wealth. Its funds are allocated via community vote to power UBI and fund new regenerative projects.
+- Each meaningful initiative (e.g. reforestation, local DAO, impact project) is anchored by a **Project Contract**:
+  - Holds mission, milestones, stewards, and funding allocations.  
+  - Records **Impact Events** when milestones are verified.  
+  - Triggers issuance of GGCs and, in some cases, additional funding.
 
-### The Governance Model: Power to the Collective
-
-Governance is managed by a **Decentralized Autonomous Organization (DAO)**.
-
-- **Right to Vote is Earned, Not Bought.**  
-  It is tied to a user’s verified Global Good Credits, ensuring "one contributor, one voice."
-
-- **Power is Proportional to Contribution.**  
-  Those actively building a better world are entrusted with steering its resources. The model is designed to be resilient, transparent, and resistant to dominance.
-
----
-
-## Connecting the Digital and Physical Worlds
-
-### The Nervous System: Endogenous Verification
-
-A core challenge is bridging the **Oracle Problem**—how does the digital protocol trust real‑world events?
-
-Our solution is a **planetary nervous system** that verifies impact without human intermediaries.
-
-- **Automated Sensorium**  
-  The protocol trusts data from a triangulated consensus of independent, non‑human sources:
-  - Satellite imagery (e.g., for reforestation)  
-  - IoT sensor networks (e.g., for water quality)  
-  - Bio‑acoustic monitors (e.g., for biodiversity)
-
-- **Protocol as Immune System**  
-  The system’s AI models a baseline of ecosystem health. Significant, verifiable improvements across multiple data streams are automatically flagged as "Impact Events," generating a cryptographic **Proof of Impact**.
-
-**Example:**  
-A river cleanup is verified only when in‑river sensors, bio‑acoustic data, *and* satellite imagery all corroborate the improvement. This makes fraud economically unviable.
-
-### The Healing Hands: Robotics & Automation
-
-Technology is not a threat but a partner in planetary regeneration.
-
-- **Forest Doctor Drones & Coral Guardian Robots**  
-  Autonomous agents that perform large‑scale, precise physical work of healing ecosystems.
-
-- **The Vision: A Self‑Tending Ecosystem**  
-  The system detects distress and autonomously dispatches healing resources, creating a continuous feedback loop between a healthy planet and human prosperity.
+Project contracts are the on-chain “storybooks” of global regeneration.
 
 ---
 
-## The Intelligence Layer & Economic Engine
+## Treasury & Regenerative Economic Engine
 
-### The Collective Intelligence: The Global Good AI Agent
+### DAO Treasury
 
-The AI in our system is not a competitor; it is a **catalyst for connection** and an **amplifier for compassion**.
+The **DAO Treasury** is a community‑governed capital pool that:
 
-- **Role**  
-  Acts as a symbiotic partner, a "Purpose Alchemist." It analyzes the living library of all projects and contributions to make high‑impact matches.
+- Holds protocol assets (tokens, stables, impact assets).  
+- Funds:
+  - Regenerative projects.  
+  - UBI distributions.  
+  - Operations, security, and R&D.
 
-- **Function**  
-  Connects an individual’s unique skills, passions, and location with the global network of unmet needs.
+### UBI Flywheel
 
-  - *Example:* Matches a retired accountant with a reforestation DAO needing treasury management.
+The core logic:
 
-- **AI Alignment**  
-  The AI is trained on the clean, verified data of humanity healing its world. It learns benevolence by observing and amplifying our collective benevolence.
+1. Treasury allocates capital to **regenerative projects** that generate:
+   - **Financial returns** (cashflow, yield).  
+   - **Impact returns** (verified impact events).
 
-### The Regenerative Economic Engine
+2. Financial returns flow back to the treasury and are split between:
+   - New regenerative investments.  
+   - **Universal Basic Income** distributions to contributors.
 
-The economy is a self‑sustaining, multi‑layered engine where value is generated by nurturing life.
+3. UBI frees human time and attention for more regenerative work, which generates more impact and, over time, more revenue.
 
-#### 1. The UBI Flywheel (Core Heartbeat)
+> Healing the planet → financial abundance → more UBI → freed human creativity → more verifiable good.
 
-- The DAO Treasury funds large‑scale, revenue‑generating regenerative projects (e.g., solar farms, sustainable aquaculture).  
-- These projects yield a **Financial Return** (profit) and an **Impact Return** (verifiable good, like CO₂ sequestered).  
-- The financial return flows back to the treasury, funding more UBI and new projects.  
-- **Logic:** Healing the planet → financial abundance → more UBI → freed human creativity → more verifiable good.
+### Funding Phases & Instruments
 
-#### 2. Metabolic Layer (Capillary Network)
+Key concepts:
 
-- **Micro‑Transaction Protocol Fee**  
-  A tiny fee on value movement within the ecosystem, recycled to the treasury.
+- **Vested Philanthropic Offering (VPO)**  
+  A mission‑aligned fundraising mechanism:
+  - Philanthropic backers provide initial capital to the treasury.  
+  - In return, they receive long‑term, vesting claims (tokens or yield) encoded in smart contracts.  
+  - Designed for patient, values‑aligned capital rather than extraction.
 
-- **Algorithmic Impact Market**  
-  Verifiable impact (e.g., a tonne of carbon) is tokenized. The treasury automatically buys and "burns" these certificates, creating a market for impact and acting as a deflationary mechanism for the OHM token.
+- **Global Good Bonds**  
+  Bonds for specific regenerative infrastructure (e.g. solar farms, regenerative agriculture):
+  - Contributors lock capital into a bond contract.  
+  - Project revenues repay bondholders over time, while verified impact is recorded on‑chain.
 
-#### 3. Emergent Growth Layer (Mycelial Network)
+- **Regenerative Reserve**  
+  A portfolio of mission‑aligned, yield‑generating assets (e.g. green DeFi, tokenised impact assets) whose yield:
+  - Provides a baseline for UBI.  
+  - Keeps even “idle” treasury capital actively healing the world.
 
-- A **Stigmergic Micro‑Investment Pool** automatically funds projects that show extraordinary, verifiable success and adoption. The proof of success triggers further investment.
-
----
-
-## The Human Renaissance & Call to Action
-
-### The Human Transformation
-
-The ultimate goal of the protocol is the **liberation of the human spirit**.
-
-- **From Scarcity Self to Abundance Self**
-
-  - **Scarcity Self:**  
-    Identity forged in competition.  
-    Value = utility.  
-    Security = accumulation.  
-    *(Artefact: The traditional CV).*
-
-  - **Abundance Self:**  
-    Identity forged in contribution.  
-    Value = unique perspective and care.  
-    Security = connection.  
-    *(Artefact: The Living Impact Ledger).*
-
-- **The New Resume: The Living Impact Ledger**  
-  A dynamic, verifiable chronicle of a user’s contributions, collaborations, and skill evolution—their "Giving Footprint." It replaces defensive job applications with discoverable purpose.
-
-- **The New Professions: Artisans of a Better World**  
-  Roles are redefined around contribution to the whole:  
-  **Ecosystem Restorer, Community Harmoniser, Wisdom Keeper, Open‑Source Curator, Systems Transitioner.**
-
-### The Great Liberation
-
-We are moving from being **Human Resources** (a commodity to be managed) to being a **Human Source**—the wellspring of creativity, compassion, and connection itself.
+- **Stigmergic Micro‑Investment Pool**  
+  A portion of the treasury dedicated to automatically scaling what works:
+  - When a project shows exceptional, verifiable success and replication, the protocol can auto‑propose / auto‑deploy a micro‑investment.  
+  - Success leaves a strong “digital pheromone trail”; capital follows that trail.
 
 ---
 
-## Our Call to Developers
+## Verification: Connecting Digital & Physical Worlds
 
-This is not a theoretical exercise. It is a living, collaborative build. The blueprint is here, and the community is forming.
+### Oracle Problem
 
-> **Your role is critical.**  
-> You are building the foundational layers of a new societal OS—the smart contracts, the verification logic, the AI interfaces, and the UX that will make this accessible to billions.
+We must verify real‑world impact in a **trust-minimised** way. The goal is to avoid re‑creating centralised gatekeepers or purely human “oracles”.
 
-We will not get everything right on the first try. This is a grand, open‑source experiment in human cooperation. The goal is to begin, to iterate, and to evolve together.
+### Planetary Nervous System
+
+The protocol moves toward **endogenous verification** using:
+
+- **Sensor data**:
+  - Satellite imagery (e.g. forest cover, water quality).  
+  - IoT sensor networks (e.g. river health, soil metrics).  
+  - Bio‑acoustic monitors (e.g. biodiversity).
+
+- **Triangulation**:
+  - Impact is confirmed only when multiple, independent data sources converge on the same conclusion.  
+  - Example: a river cleanup milestone is verified when:
+    - In‑river sensors show improved water quality,  
+    - Acoustic data shows increasing biodiversity,  
+    - Satellite imagery confirms reduced pollution plumes.
+
+This makes fraud **economically unviable**: it is hard and expensive to fake multiple independent data streams.
+
+- **AI Modelling**:
+  - Models baselines of ecosystem health and detects significant deviations.  
+  - Flags potential **Impact Events** for on‑chain recording via Project Contracts.
+
+---
+
+## Intelligence Layer & AI Agent
+
+### Global Good AI Agent
+
+The AI layer is designed as a **catalyst for connection**, not a controller.
+
+Roles:
+
+- **Purpose Alchemist / Matchmaker**:
+  - Maps skills, passions, and locations to unmet needs and projects.
+  - Example:  
+    - Connects a retired accountant with a reforestation DAO needing transparent treasury management.  
+    - Suggests local micro‑actions (e.g. data collection, organising events) to new contributors.
+
+- **Learning from Benevolence**:
+  - Trains primarily on verified records of positive impact and successful projects.  
+  - Learns what “good” looks like from real, recorded human actions.
+
+Outputs:
+
+- Personalised recommendations.  
+- Contextual learning paths.  
+- Collective intelligence dashboards for governance and builders.
+
+The AI agent is aligned by design toward **amplifying contribution and regeneration**, not attention or profit extraction.
+
+---
+
+## Governance: Proof-of-Goodwill
+
+### DAO Governance
+
+Governance is managed by a **Decentralized Autonomous Organization (DAO)** with these principles:
+
+- **Proof-of-Goodwill**:
+  - Governance weight is tied to GGCs and contribution, not simply token balance.  
+  - “One contributor, one voice (weighted by verified contribution)” is the guiding idea.
+
+- **Proposal Types**:
+  - Treasury allocations.  
+  - Parameter changes (UBI rate, fee rates, thresholds).  
+  - Upgrades to protocol contracts and verification logic.
+
+- **Safeguards**:
+  - Quorum and supermajority thresholds for critical decisions.  
+  - Time‑locks and review periods for major changes.
+
+The aim is a governance system that is **resistant to plutocratic capture** and clearly aligned with the people and communities who are actually doing the work.
+
+---
+
+## Human Layer: Impact Ledger & New Professions
+
+Although not fully formalised as contracts yet, the protocol is designed to support:
+
+- **Living Impact Ledger / Impact Resume**  
+  - Built from the data in Profile and Project Contracts.  
+  - Shows a person’s Giving Footprint, collaborations, and evolution over time.  
+  - Becomes the new “resume” for purpose‑driven work.
+
+- **New Professions** (conceptual layer from the book):
+  - Ecosystem Restorers, Community Harmonisers, Wisdom Keepers, Open‑Source Curators, Systems Transitioners, etc.  
+  - Roles defined by their contribution to planetary and social health, not by corporate hierarchy.
+
+These ideas are more fully explored in *The Abundance Protocol* and the Movement & Operations Plan; the technical whitepaper describes how the protocol supports them.
+
+---
+
+## Call to Developers
+
+This is a **living build**, not a finished spec.
+
+As a developer, you are critical in:
+
+- Designing and implementing smart contracts (profiles, projects, treasury, GGCs).  
+- Architecting the verification layer (oracle integrations, data models).  
+- Building frontends and tools that make this usable by real communities.  
+- Stress‑testing tokenomics and governance assumptions.  
+- Co‑creating the technical whitepaper and documentation as the protocol evolves.
+
+> You are not just shipping code. You are helping to encode a new societal OS in open infrastructure.
+
+We will not get everything right on the first try. That is expected. The goal is to build the **first working version**, learn from the Gulf pilot and global collaborators, and evolve together.
 
 **Let’s build it.**
