@@ -120,7 +120,7 @@ When a milestone is verified:
 - The project contract:
   - Emits an **Impact Event**.  
   - Triggers **GGC issuance** to relevant contributors.  
-  - May trigger **additional funding** (stigmergic micro-investment).
+  - May trigger **additional funding** (stigmergic micro-investment; see §5.6).
 
 ---
 
@@ -138,7 +138,7 @@ Responsibilities:
   - UBI distributions.  
   - Operational costs (security, infrastructure, etc.).
 
-Guarantees we aim for:
+Design goals:
 
 - Transparent, on-chain accounting.  
 - Governance-controlled parameters.  
@@ -151,8 +151,8 @@ Guarantees we aim for:
 UBI is powered by:
 
 - Returns from regenerative investments.  
-- Protocol fee income and impact markets (see below).  
-- Potential external philanthropic inflows (e.g. VPO).
+- Protocol fee income and impact markets (see §5.5).  
+- External philanthropic inflows (e.g. VPO in §5.3).
 
 Key ideas:
 
@@ -160,7 +160,76 @@ Key ideas:
 - **Distribution**: periodic (e.g. monthly), with caps and rate parameters set by governance.  
 - **Adaptivity**: can adjust as treasury health, impact returns, and user count evolve.
 
-### 5.3 Impact Market & Fees
+### 5.3 Vested Philanthropic Offering (VPO)
+
+To fund the initial treasury and early protocol development, OHM will use a **Vested Philanthropic Offering (VPO)**.
+
+Design goals:
+
+- Align capital with the public-good mission.  
+- Avoid extractive, speculative funding structures.  
+- Provide long-term, patient capital to the DAO Treasury.
+
+Conceptual structure:
+
+- Mission-aligned philanthropists and impact backers contribute assets (e.g. stablecoins, fiat on-ramped capital) to the VPO contract.  
+- In return, they receive a vesting claim on a portion of future protocol-native tokens and/or treasury yield, released over a long-term schedule.  
+- Vesting conditions and caps are encoded in smart contracts and governed transparently by the DAO.
+
+The VPO is intended as a **bridge** from early philanthropic funding to a self-sustaining treasury fed by regenerative investments and protocol activity.
+
+### 5.4 Global Good Bonds
+
+To finance specific large-scale regenerative projects, OHM can issue **Global Good Bonds**.
+
+Conceptual mechanics:
+
+- A bond contract is created for a specific project or portfolio (e.g., a solar farm, regenerative agriculture cooperative, or ecosystem restoration fund).  
+- Contributors lock capital (e.g., stablecoins or OHM tokens) into the bond contract for a defined term.  
+- The funded project generates:
+  - **Financial returns** (cash flows) that service the bond over time.  
+  - **Impact returns** (verifiable impact events) recorded on-chain.  
+- At maturity (or via periodic coupons), bondholders receive repayments and/or yield, while the project retains long-lived regenerative capacity.
+
+Global Good Bonds decentralise impact investing, allowing contributors to co-finance major regenerative infrastructure under transparent, on-chain terms.
+
+### 5.5 Regenerative Reserve
+
+The **Regenerative Reserve** is the long-term ballast of the DAO Treasury.
+
+Purpose:
+
+- Provide a relatively stable base of yield to support UBI and core operations.  
+- Ensure that treasury reserves themselves are aligned with OHM’s mission.
+
+Indicative asset types:
+
+- Staked positions in mission-aligned DeFi protocols (e.g., green / climate-focused primitives).  
+- Tokenised real-world assets (e.g., high-quality carbon or biodiversity credits).  
+- Select “blue-chip” impact tokens and other regenerative instruments.
+
+The Regenerative Reserve is managed according to risk, liquidity, and mission-alignment constraints defined by governance. Its yield provides a **baseline income stream** to complement project-level returns and protocol fees.
+
+### 5.6 Stigmergic Micro-Investment Pool (Emergent Growth Layer)
+
+To support emergent, bottom-up innovation, a portion of the treasury is allocated to a **Stigmergic Micro-Investment Pool**.
+
+Conceptual behaviour:
+
+- The Global Good AI Agent and analytics layer continuously monitor:
+  - Project performance (impact events, milestone completion).  
+  - Adoption and replication (how often patterns are reused elsewhere).  
+- When predefined thresholds are met (e.g., repeated success across regions, exceptional impact/cost ratios), the system:
+  - Flags the project as a **high-leverage candidate**.  
+  - Proposes or automatically executes a micro-investment or grant from this pool.
+
+This creates a stigmergic growth dynamic:
+
+- Proven success leaves a strong “digital pheromone trail”.  
+- The protocol follows that trail by routing more capital and attention to what works.  
+- High-performing patterns are scaled without requiring purely top-down allocation decisions.
+
+### 5.7 Impact Market & Fees
 
 Potential components:
 
@@ -168,7 +237,7 @@ Potential components:
   - Very small percentage on transactions within the ecosystem, routed to the treasury.
 
 - **Algorithmic Impact Market**:  
-  - Verified impact units (e.g. tonnes of CO₂ sequestered) are tokenized.  
+  - Verified impact units (e.g., tonnes of CO₂ sequestered) are tokenized.  
   - The treasury automatically buys and “retires” these tokens to:
     - Support impact projects.  
     - Create a price signal for tangible regeneration.
@@ -240,23 +309,23 @@ Issue pattern:
   - Recognition of sustained, high-quality contribution.
 
 - **Upgradability with constraints**:  
-  The protocol must evolve, but core guarantees (e.g. non-transferability of GGCs, transparency of treasury) should be hard to weaken.
+  The protocol must evolve, but core guarantees (e.g., non-transferability of GGCs, transparency of treasury) should be hard to weaken.
 
 ### 7.2 Governance Mechanisms (Draft)
 
 Potential structure:
 
 - **Governance token(s)**:
-  - Could be partially derived from GGCs (e.g. some function of lifetime/active contribution).  
+  - Could be partially derived from GGCs (e.g., some function of lifetime/active contribution).  
   - Could also include stake components to ensure skin-in-the-game.
 
 - **Proposal types**:
-  - Parameter changes (e.g. UBI rate, fee rates).  
+  - Parameter changes (e.g., UBI rate, fee rates).  
   - Treasury allocations (project funding, grants).  
   - Contract upgrades (via upgrade proxies or new deployments).
 
 - **Voting**:
-  - Off-chain signalling (e.g. Snapshot-style) for low-risk decisions.  
+  - Off-chain signalling (e.g., Snapshot-style) for low-risk decisions.  
   - On-chain execution for treasury and contract changes.
 
 - **Safeguards**:
@@ -365,7 +434,19 @@ This roadmap is intentionally high-level and will be fleshed out with concrete i
 
 ---
 
-## 11. Conclusion
+## 11. Relationship to Other OHM Documents
+
+This technical whitepaper should be read alongside:
+
+- *The Abundance Protocol* book, which provides the philosophical and narrative foundation.  
+- The OHM Movement & Operations Plan (living document) in the OHM Notion workspace.  
+- The OHM Community Handbook, which describes emerging roles, guilds, and practices.
+
+Together, these documents describe the **vision** (why), the **protocol** (what), and the **community practices** (how) of OHM.
+
+---
+
+## 12. Conclusion
 
 OHM Protocol is an attempt to encode, in open-source infrastructure, a new way of organising human effort:
 
